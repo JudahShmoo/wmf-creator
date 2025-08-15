@@ -1,0 +1,67 @@
+{
+  "name": "wmf-creator",
+  "version": "1.0.0",
+  "description": "A TypeScript library for generating Windows Metafile (WMF) images",
+  "main": "dist/lib.js",
+  "types": "dist/lib.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/lib.d.ts",
+      "import": "./dist/lib.js"
+    }
+  },
+  "files": [
+    "dist/lib.js",
+    "dist/lib.d.ts",
+    "dist/lib.js.map",
+    "dist/lib.d.ts.map",
+    "dist/generate.js",
+    "dist/generate.d.ts",
+    "dist/generate.js.map",
+    "dist/generate.d.ts.map",
+    "dist/builder.js",
+    "dist/builder.d.ts",
+    "dist/builder.js.map",
+    "dist/builder.d.ts.map",
+    "dist/enums.js",
+    "dist/enums.d.ts",
+    "dist/enums.js.map",
+    "dist/enums.d.ts.map",
+    "dist/inputStructure.js",
+    "dist/inputStructure.d.ts",
+    "dist/inputStructure.js.map",
+    "dist/inputStructure.d.ts.map",
+    "dist/index.js",
+    "dist/index.d.ts",
+    "dist/index.js.map",
+    "dist/index.d.ts.map",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "example": "tsc && node dist/example.js",
+    "example-node": "tsc && node dist/example-node.js",
+    "clean": "rimraf dist",
+    "prepublishOnly": "npm run clean && npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "wmf",
+    "windows-metafile",
+    "vector-graphics",
+    "image-generation",
+    "typescript"
+  ],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "engines": {
+    "node": ">=16"
+  },
+  "devDependencies": {
+    "@types/node": "^24.2.1",
+    "rimraf": "^5.0.10",
+    "typescript": "^5.9.2"
+  }
+}
