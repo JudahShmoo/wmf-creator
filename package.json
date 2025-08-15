@@ -1,6 +1,6 @@
 {
   "name": "wmf-creator",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A TypeScript library for generating Windows Metafile (WMF) images",
   "main": "dist/lib.js",
   "types": "dist/lib.d.ts",
