@@ -35,5 +35,5 @@ export default function generateWMF(data: ImageObject): Blob {
 		}
 	});
 	builder.endFile();
-	return new Blob([builder.toArrayBuffer()], { type: 'application/x-wmf' });
+	return new Blob([builder.toArrayBuffer()], { type: 'image/wmf' });
 }
